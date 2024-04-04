@@ -1,0 +1,206 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+.portfolio-item {
+  margin-bottom: 40px;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styles for contact section */
+#contact {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#contact textarea {
+  height: 150px;
+}
+
+#contact button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Gaya umum untuk foto */
+img {
+  max-width: 90%; /* Membuat foto tetap berada dalam batas lebar container */
+  height: auto; /* Mempertahankan rasio aspek gambar */
+  display: block; /* Membuat gambar menjadi blok untuk mengatur margin dan padding dengan mudah */
+  margin: 0 auto; /* Menengahkan gambar di dalam kontainer */
+}
+
+/* Contoh gaya untuk membuat foto bulat */
+.rounded-image {
+  border-radius: 500%; /* Membuat sudut gambar menjadi bulat */
+}
+
+/* Contoh gaya untuk menambahkan bayangan pada foto */
+.shadowed-image {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Membuat bayangan di bawah gambar */
+}
+
+/* Contoh gaya untuk membuat foto menjadi transparan saat dihover */
+.transparent-on-hover {
+  transition: opacity 0.3s ease; /* Animasi transisi untuk efek hover */
+}
+
+.transparent-on-hover:hover {
+  opacity: 0.8; /* Mengurangi opasitas gambar saat dihover */
+}
+
+/* Styles for portfolio section */
+#portfolio {
+  padding: 50px 0;
+}
+
+.portfolio-item {
+  margin-bottom: 40px;
+}
+
+.portfolio-item h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.portfolio-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Styles for video */
+video {
+  width: 100%; /* Atur lebar video agar sesuai dengan kontainer */
+  height: auto; /* Biarkan tinggi menyesuaikan agar proporsi tidak terdistorsi */
+  border-radius: 8px; /* Membuat sudut video sedikit bulat */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada video */
+}
+
+/* Gaya untuk kontainer audio */
+.audio-container {
+  width: 300px; /* Lebar kontainer audio */
+  margin: 0 auto; /* Posisi tengah */
+}
+
+/* Gaya untuk pemutar audio */
+audio {
+  width: 100%; /* Lebar penuh dalam kontainer */
+  display: block; /* Membuat pemutar audio menjadi blok */
+}
+
+/* Gaya untuk kontrol audio */
+audio::-webkit-media-controls-panel {
+  background-color: #f9f9f9; /* Warna latar belakang kontrol */
+  color: #333; /* Warna teks pada kontrol */
+  border-radius: 10px; /* Sudut bulat kontrol */
+}
+
+/* Gaya untuk tombol kontrol audio */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #333; /* Warna tombol kontrol */
+}
+
+.video-container {
+  width: 400px; /* Atur lebar video */
+}
+
+.video-container video {
+  width: 100%; /* Video menyesuaikan dengan lebar kontainer */
+  height: auto; /* Tinggi video menyesuaikan agar proporsi aspek terjaga */
+}
